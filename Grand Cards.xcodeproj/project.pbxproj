@@ -14,6 +14,8 @@
 		190FDDD724B7CF9E00100E2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 190FDDD624B7CF9E00100E2A /* Assets.xcassets */; };
 		190FDDDA24B7CF9E00100E2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 190FDDD824B7CF9E00100E2A /* LaunchScreen.storyboard */; };
 		190FDDE324B7D65000100E2A /* LogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190FDDE224B7D65000100E2A /* LogoViewController.swift */; };
+		66918CA324B8DE490036C081 /* card_stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66918CA224B8DE490036C081 /* card_stack.swift */; };
+		66918CA524B8DF790036C081 /* player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66918CA424B8DF790036C081 /* player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		190FDDD924B7CF9E00100E2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		190FDDDB24B7CF9E00100E2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		190FDDE224B7D65000100E2A /* LogoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoViewController.swift; sourceTree = "<group>"; };
+		66918CA224B8DE490036C081 /* card_stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = card_stack.swift; sourceTree = "<group>"; };
+		66918CA424B8DF790036C081 /* player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +62,9 @@
 		190FDDCC24B7CF9C00100E2A /* Grand Cards */ = {
 			isa = PBXGroup;
 			children = (
-				190FDDE124B7D62600100E2A /* View Controllers */,
+				66918CA124B8DD280036C081 /* View */,
+				66918CA024B8DD0E0036C081 /* Model */,
+				190FDDE124B7D62600100E2A /* Controllers */,
 				190FDDCD24B7CF9C00100E2A /* AppDelegate.swift */,
 				190FDDCF24B7CF9C00100E2A /* SceneDelegate.swift */,
 				190FDDD124B7CF9C00100E2A /* ViewController.swift */,
@@ -70,12 +76,28 @@
 			path = "Grand Cards";
 			sourceTree = "<group>";
 		};
-		190FDDE124B7D62600100E2A /* View Controllers */ = {
+		190FDDE124B7D62600100E2A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				190FDDE224B7D65000100E2A /* LogoViewController.swift */,
 			);
-			path = "View Controllers";
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		66918CA024B8DD0E0036C081 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				66918CA224B8DE490036C081 /* card_stack.swift */,
+				66918CA424B8DF790036C081 /* player.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		66918CA124B8DD280036C081 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66918CA324B8DE490036C081 /* card_stack.swift in Sources */,
 				190FDDD224B7CF9C00100E2A /* ViewController.swift in Sources */,
 				190FDDCE24B7CF9C00100E2A /* AppDelegate.swift in Sources */,
 				190FDDD024B7CF9C00100E2A /* SceneDelegate.swift in Sources */,
+				66918CA524B8DF790036C081 /* player.swift in Sources */,
 				190FDDE324B7D65000100E2A /* LogoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,7 +252,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -282,7 +306,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -300,6 +324,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 6VGGNMX8VN;
 				INFOPLIST_FILE = "Grand Cards/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,6 +345,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 6VGGNMX8VN;
 				INFOPLIST_FILE = "Grand Cards/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
