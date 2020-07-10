@@ -29,7 +29,12 @@ class LogoViewController: UIViewController {
 				self.containerView.setNeedsLayout()
 				self.containerView.layoutIfNeeded()
 			}) { (parameter) in
-				// TODO: Go to next screen
+				// Go to next screen
+				let startVC = self.storyboard?.instantiateViewController(withIdentifier: "StartScreen")
+				if let startVC = startVC {
+					startVC.modalTransitionStyle = .crossDissolve
+					self.present(startVC, animated: true, completion: nil)
+				}
 			}
 		}
     }

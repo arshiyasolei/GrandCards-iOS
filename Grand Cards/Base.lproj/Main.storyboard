@@ -40,6 +40,21 @@
             </objects>
             <point key="canvasLocation" x="139" y="139"/>
         </scene>
+        <!--Start View Controller-->
+        <scene sceneID="opQ-t1-Ypb">
+            <objects>
+                <viewController storyboardIdentifier="StartScreen" id="MBg-CQ-19W" customClass="StartViewController" customModule="Grand_Cards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PVi-I7-nqK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="E3x-7E-Gbe"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JhC-Ev-qd7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="968" y="139"/>
+        </scene>
     </scenes>
     <resources>
         <image name="SinclustoAppLogo" width="361.5" height="209"/>

@@ -14,6 +14,7 @@
 		190FDDD724B7CF9E00100E2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 190FDDD624B7CF9E00100E2A /* Assets.xcassets */; };
 		190FDDDA24B7CF9E00100E2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 190FDDD824B7CF9E00100E2A /* LaunchScreen.storyboard */; };
 		190FDDE324B7D65000100E2A /* LogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190FDDE224B7D65000100E2A /* LogoViewController.swift */; };
+		194B828124B8E06B00F91616 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194B828024B8E06B00F91616 /* StartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		190FDDD924B7CF9E00100E2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		190FDDDB24B7CF9E00100E2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		190FDDE224B7D65000100E2A /* LogoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoViewController.swift; sourceTree = "<group>"; };
+		194B828024B8E06B00F91616 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				190FDDE224B7D65000100E2A /* LogoViewController.swift */,
+				194B828024B8E06B00F91616 /* StartViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				194B828124B8E06B00F91616 /* StartViewController.swift in Sources */,
 				190FDDD224B7CF9C00100E2A /* ViewController.swift in Sources */,
 				190FDDCE24B7CF9C00100E2A /* AppDelegate.swift in Sources */,
 				190FDDD024B7CF9C00100E2A /* SceneDelegate.swift in Sources */,
