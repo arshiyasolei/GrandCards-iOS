@@ -13,6 +13,7 @@
 		190FDDD524B7CF9C00100E2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 190FDDD324B7CF9C00100E2A /* Main.storyboard */; };
 		190FDDD724B7CF9E00100E2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 190FDDD624B7CF9E00100E2A /* Assets.xcassets */; };
 		190FDDDA24B7CF9E00100E2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 190FDDD824B7CF9E00100E2A /* LaunchScreen.storyboard */; };
+		190FDDE324B7D65000100E2A /* LogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190FDDE224B7D65000100E2A /* LogoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		190FDDD624B7CF9E00100E2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		190FDDD924B7CF9E00100E2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		190FDDDB24B7CF9E00100E2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		190FDDE224B7D65000100E2A /* LogoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		190FDDCC24B7CF9C00100E2A /* Grand Cards */ = {
 			isa = PBXGroup;
 			children = (
+				190FDDE124B7D62600100E2A /* View Controllers */,
 				190FDDCD24B7CF9C00100E2A /* AppDelegate.swift */,
 				190FDDCF24B7CF9C00100E2A /* SceneDelegate.swift */,
 				190FDDD124B7CF9C00100E2A /* ViewController.swift */,
@@ -65,6 +68,14 @@
 				190FDDDB24B7CF9E00100E2A /* Info.plist */,
 			);
 			path = "Grand Cards";
+			sourceTree = "<group>";
+		};
+		190FDDE124B7D62600100E2A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				190FDDE224B7D65000100E2A /* LogoViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +152,7 @@
 				190FDDD224B7CF9C00100E2A /* ViewController.swift in Sources */,
 				190FDDCE24B7CF9C00100E2A /* AppDelegate.swift in Sources */,
 				190FDDD024B7CF9C00100E2A /* SceneDelegate.swift in Sources */,
+				190FDDE324B7D65000100E2A /* LogoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +296,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 6VGGNMX8VN;
 				INFOPLIST_FILE = "Grand Cards/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -292,6 +306,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sinclustoapps.Grand-Cards";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Grand Cards Dev";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -301,7 +316,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 6VGGNMX8VN;
 				INFOPLIST_FILE = "Grand Cards/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -309,6 +326,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sinclustoapps.Grand-Cards";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Grand Cards Dev";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
