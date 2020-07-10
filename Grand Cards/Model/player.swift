@@ -9,8 +9,9 @@
 import Foundation
 
 class player {
-    constructor(arr) {
-      this.cards = arr;
+    var cards: [Any];
+    init(arr: [Any] ) {
+      cards = arr;
     }
 
   }
