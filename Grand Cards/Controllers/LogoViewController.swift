@@ -9,11 +9,34 @@
 import UIKit
 
 class LogoViewController: UIViewController {
-
+	@IBOutlet weak var imageView: UIImageView!
+	@IBOutlet weak var verticalCenter: NSLayoutConstraint!
+	@IBOutlet var containerView: UIView!
+	
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+		verticalCenter.constant = containerView.bounds.height / 2 + imageView.bounds.height / 2
+		containerView.setNeedsLayout()
+		containerView.layoutIfNeeded()
+		
+		UIView.animate(withDuration: 1, delay: 1, options: .curveEaseOut, animations: {
+			self.verticalCenter.constant = 0
+			self.containerView.setNeedsLayout()
+			self.containerView.layoutIfNeeded()
+		}) { (parameter) in
+			UIView.animate(withDuration: 1, delay: 1, options: .curveEaseIn, animations: {
+				self.verticalCenter.constant = self.containerView.bounds.height / -2 - self.containerView.bounds.height / 2
+				self.containerView.setNeedsLayout()
+				self.containerView.layoutIfNeeded()
+			}) { (parameter) in
+				// Go to next screen
+				let startVC = self.storyboard?.instantiateViewController(withIdentifier: "StartScreen")
+				if let startVC = startVC {
+					startVC.modalTransitionStyle = .crossDissolve
+					self.present(startVC, animated: true, completion: nil)
+				}
+			}
+		}
     }
     
 
